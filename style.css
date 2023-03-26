@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.details {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.ball-text {
+  text-align: left;
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  left: 10%;
+  bottom: 55%;
+  transform: translate(-20%, -40%);
+  animation: fadeIn 5s;
+}
+
+.second-text {
+  text-align: right;
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 1.7rem;
+  left: 16%;
+  bottom: 47%;
+  transform: translate(-20%, -40%);
+  animation: fadeIn 5s;
+}
+
+.third-text{
+  text-align: right;
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  right: 26%;
+  bottom: 80%;
+  transform: translate(-20%, -40%);
+  animation: fadeIn 5s;
+}
+
+.fourth-text{
+  text-align: justify;
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 1.4rem;
+  right: 15%;
+  bottom: 18%;
+  transform: translate(-20%, -40%);
+  animation: fadeIn 5s;
+  max-width: 20%;
+
+}
+
+.contacts-text{
+  text-align: left;
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  left: 6%;
+  bottom: 35%;
+  transform: translate(-20%, -40%);
+  animation: fadeIn 5s;
+}
+
+.sixth-text{
+  text-align: justify;
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 1.5rem;
+  left: 8%;
+  bottom: 15%;
+  transform: translate(-20%, -40%);
+  animation: fadeIn 5s;
+  max-width: 20%;
+}
+
+.seventh-text{
+  text-align: left;
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 5rem;
+  left: 22%;
+  bottom: 50%;
+  transform: translate(-20%, -40%);
+  animation: fadeIn 5s;
+}
+
+li {
+  list-style: none;
+}
+
+.eight-text{
+  text-align: left;
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 1.7rem;
+  left: 25%;
+  bottom: 38%;
+  transform: translate(-20%, -40%);
+  animation: fadeIn 5s;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 5vh;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 4vh;
+  margin-top: 10vh;
+}
+
+.contact a{
+  color: black;
+}
+
+.logo-text {
+  padding-right: rem;
+}
+
+.contact  i {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .ball-text {
+    font-size: 2rem;
+    right: 50%;
+    bottom: 25%;
+    transform: translate(50%, 50%);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+

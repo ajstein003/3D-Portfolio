@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <h2 class="ball-text"><b>Arjab Chakrabarti</h2></b>
+    <h2 class="second-text">Web Developer</h2>
+    <h3 class="third-text"> About </h3>
+    <h3 class="fourth-text"> As a web developer, I am a highly skilled professional with expertise in designing, creating, and maintaining websites and web applications. 
+                             I possess a deep understanding of programming languages, frameworks, and tools, and have a keen eye for detail, ensuring that your websites are 
+                             visually appealing and user-friendly.</h3>
+
+    <h4 class="contacts-text">Blogs(Coming soon)</h4>
+    <h5 class="seventh-text"> Projects </h5>
+    <h6 class="eight-text"><ul><li>AI Flight Simulator</li><li>Self Driving Car</li></ul> </h6>
+    <canvas class="canvas"></canvas>
+    <div class="details">
+      <span class="sphere"></span>    
+    </div>
+    <div class="footer">
+          <div class="contact">
+            <a href="mailto:chakrabartiarjab@gmail.com"><i class="bi bi-envelope"></i></a>
+            <a href="https://github.com/ajstein003"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/arjab-chakrabarti-96a743265/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://instagram.com/itsarjab?igshid=YmMyMTA2M2Y="><i class="bi bi-instagram"></i></a>
+          </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script>
+        const myTags = [
+                            'JavaScript', 'CSS', 'HTML',
+                            'C', 'C++', 'Pytorch',
+                            'Python', 'Java', 'Git',
+                            , 'SQL',    
+                        ];
+        // var tagCloud = TagCloud('.content', myTags);
+        var tagCloud = TagCloud('.sphere', myTags,{
+        // radius in px
+        radius: 500,
+        // animation speed
+        // slow, normal, fast
+        maxSpeed: 'fast',
+        initSpeed: 'fast',
+        // 0 = top
+        // 90 = left
+        // 135 = right-bottom
+        direction: 135,
+        // interact with cursor move on mouse out
+        keep: true
+        }); 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        $(window).on('resize', function() {
+            if($(window).width() > 768) {
+                $('#workBlock').removeClass('flex-column');
+            }else{
+                $('#workBlock').addClass('flex-column');
+            }
+        })
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+      integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
